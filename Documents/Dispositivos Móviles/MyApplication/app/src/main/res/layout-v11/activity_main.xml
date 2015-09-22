@@ -3,6 +3,7 @@
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
     android:background="@mipmap/android22">
 
@@ -11,41 +12,54 @@
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:ems="10"
-        android:id="@+id/editText"
+        android:id="@+id/user"
         android:layout_marginTop="107dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:background="#ffc2c2c2" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Usuario"
+        android:id="@+id/txtuser"
+        android:textColor="#ffffffff"
+        android:layout_alignBottom="@+id/user"
+        android:layout_alignRight="@+id/logbtn"
+        android:layout_alignEnd="@+id/logbtn"
+        android:layout_marginBottom="43dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Password"
+        android:id="@+id/txtpass"
+        android:textColor="#ffffffff"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:id="@+id/logbtn"
+        style="@android:style/Widget.Holo.Button.Small"
+        android:textColor="#ffffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="BasicToast"
+        android:layout_marginBottom="47dp" />
+
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
+        android:inputType="textPassword"
         android:ems="10"
-        android:id="@+id/editText2"
-        android:layout_below="@+id/editText"
+        android:id="@+id/pass"
+        android:layout_below="@+id/txtpass"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="118dp"
-        android:background="#ffcccccc" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Nombre:"
-        android:id="@+id/textView"
-        android:layout_below="@+id/editText"
-        android:layout_centerHorizontal="true"
-        android:textColor="#ffffffff" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Telefono:"
-        android:id="@+id/textView2"
-        android:layout_below="@+id/editText2"
-        android:layout_centerHorizontal="true"
-        android:textColor="#ffffffff" />
+        android:background="#ffc2c2c2" />
 
 </RelativeLayout>
